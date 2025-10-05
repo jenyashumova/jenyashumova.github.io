@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  background: #333;
+  padding: 10px;
+  margin: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-photo {
+  width: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+header {
+  position: relative; /* важно для позиционирования картинки внутри */
+}
+
+
+
+
+
+.home-section {
+  position: relative;
+  height: 500px; /* сделаем побольше высоту */
+  background-image: url("images/resume.on_side_imag.png");
+  background-size: contain; /* масштабирование картинки */
+  background-repeat: no-repeat;
+  background-position: bottom right; /* картинка в правом нижнем углу */
+}
+
+.home-section {
+  position: relative;
+  height: 600px; /* увеличил, чтобы картинка была крупной */
+  background-image: url("images/resume.on_side_imag.png");
+  background-size: contain; /* картинка масштабируется пропорционально */
+  background-repeat: no-repeat;
+  background-position: center; /* картинка в центре */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;  /* можно поменять на white для контраста */
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6); /* прозрачный фон под текстом, чтобы читалось */
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+.home-overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.home-overlay p {
+  font-size: 1.2rem;
+}
+
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: url('images/frontpage2.imag.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}

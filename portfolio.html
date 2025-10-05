@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Jenya</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+         font-family: 'Helvetica Neue', Arial, sans-serif;
+         background: url('images/frontpage2.imag.png') no-repeat center center fixed;
+         background-size: cover;
+         color: #000;
+         margin: 0;
+         padding: 0;
+        }
+
+
+    nav {
+      background-color: #333;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #d3d3d3;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 0 10px;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    /* === ПОРТФОЛИО СЕТКА === */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background-color: #e8e8e8;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card h2 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95em;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    .view-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 18px;
+      border: 2px solid #000;
+      color: #000;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .view-btn:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Front Page</a></li>
+      <li><a href="about-me.html">About Me</a></li>
+      <li><a href="CV.html">CV</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <p>Selected creative works and fashion projects from 2023–2025</p>
+  </header>
+
+  <main>
+    <div class="portfolio-grid">
+
+      <!-- 1 -->
+      <div class="card">
+        <img src="images/SC_1.imag.jpg" alt="Summer Collection">
+        <div class="card-content">
+          <h2>Summer Collection 2024 — Fashion Photoshoot</h2>
+          <p>Concept and styling for a model photoshoot highlighting seasonal trends and vibrant looks.</p>
+          <a href="summer.html" class="view-btn">View Project</a>
+
+
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="card">
+        <img src="images/BC_0.imag.jpg" alt="Bridal Collection">
+        <div class="card-content">
+          <h2>Bridal Collection 2024 — Wedding Photoshoot</h2>
+          <p>Creative direction and styling for a romantic bridal-themed shoot inspired by elegance and purity.</p>
+          <a href="bridal.html" class="view-btn">View Project</a>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="card">
+        <img src="images/MC_0.imag.jpg" alt="Online Work">
+        <div class="card-content">
+          <h2>Online Work 2023–2025 — Marketing & Conferences</h2>
+          <p>Developing creative concepts for marketing campaigns and participating in international online conferences.</p>
+          
+          <a href="online.html" class="view-btn">View Project</a>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="card">
+        <img src="images/CSP_0.imag.jpg" alt="Creative Styling">
+        <div class="card-content">
+          <h2>Creative Styling Project 2025 — Experimental Concepts</h2>
+          <p>Exploration of new fashion aesthetics through experimental sketches, textures, and mood boards.</p>
+          <a href="creative.html" class="view-btn">View Project</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Jenya</p>
+  </footer>
+</body>
+</html>

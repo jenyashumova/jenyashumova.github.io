@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae - Jenya</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #000;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+
+    nav {
+      background-color: #333;
+      text-align: center;
+      padding: 10px 0;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #d3d3d3;
+    }
+
+    .cv-container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 40px;
+      margin: 120px auto 60px;
+      width: 90%;
+      max-width: 1000px;
+    }
+
+    /* Фото сбоку */
+    .side-image {
+      width: 250px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      object-fit: cover;
+    }
+
+    /* Контент */
+    .cv-content {
+      background-color: #e8e8e8;
+      padding: 40px 50px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      flex: 1;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      border-left: 4px solid #000;
+      padding-left: 10px;
+      margin-top: 30px;
+      font-size: 1.3em;
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 25px;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    /* Иконки-разделы */
+    h2::before {
+      content: "📎 ";
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Front Page</a></li>
+      <li><a href="about-me.html">About Me</a></li>
+      <li><a href="CV.html">CV</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+  </nav>
+
+  <main class="cv-container">
+    <!-- Фото сбоку -->
+    <img src="images/resume.on_side_imag.png" alt="Decorative fashion photo" class="side-image">
+
+    <!-- Контент -->
+    <section class="cv-content">
+      <h1>Curriculum Vitae</h1>
+
+      <h2>🎓 Education</h2>
+      <ul>
+        <li>Graduated from two high schools (UA 2013–2024 / DK 2022–2025)</li>
+        <li>Bachelor’s degree in Software Engineering (DK 2025)</li>
+        <li>Graduated from art school (UA 2022)</li>
+      </ul>
+
+      <h2>💼 Work Experience</h2>
+      <ul>
+        <li>Worked in an Italian company in the field of marketing</li>
+        <li>Experience in Danish and international companies</li>
+        <li>Modeling experience in Ukraine — gained deep fashion industry understanding</li>
+        <li>Currently focusing on creative projects and design development</li>
+      </ul>
+
+      <h2>🌍 Languages</h2>
+      <ul>
+        <li>🇺🇦 Ukrainian — fluent</li>
+        <li>🇷🇺 Russian — fluent</li>
+        <li>🇬🇧 English — fluent</li>
+        <li>🇩🇰 Danish — intermediate</li>
+        <li>🇪🇸 Spanish — basic</li>
+      </ul>
+
+      <h2>🧵 Skills</h2>
+      <ul>
+        <li>Fashion illustration</li>
+        <li>Collection development</li>
+        <li>Project management</li>
+        <li>Pattern making</li>
+        <li>Trend analysis</li>
+        <li>Marketing & communication</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Jenya</p>
+  </footer>
+</body>
+</html>
